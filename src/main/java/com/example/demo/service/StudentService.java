@@ -5,6 +5,6 @@ import com.example.demo.entity.StudentEntity;
 public interface StudentService{
 
     StudentEntity postData(StudentEntity student);
-    StudentEntity getData();
+    // StudentEntity getData();
 
 }
