@@ -40,5 +40,11 @@ public class StudentEntity{
     public StudentEntity(){
 
     }
-    public S
+    public StudentEntity(Integer id,String name,String email,String password,Date created){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.created=created; 
+    }
 }
