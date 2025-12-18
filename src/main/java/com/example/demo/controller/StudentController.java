@@ -30,5 +30,5 @@ public class StudentController{
     public StudentEntity findData(@PathVariable int id){
         return serve.findData(id);
     }
-    
+    public StudentEntity
 }
