@@ -26,6 +26,6 @@ public class StudentServiceImpl implements StudentService{
         }
         @Override
         public StudentEntity findData(int id){
-            return 
+            return repo.findById(id);
         }
 }
