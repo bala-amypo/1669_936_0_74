@@ -9,7 +9,7 @@ import com.example.demo.repository.StudentRepository;
 @Service
 public class StudentServiceImpl implements StudentService{
         @Autowired StudentRepository repo;
-
+        
         @Override
         public List<StudentEntity> getData(){
             return repo.findAll();
@@ -31,7 +31,7 @@ public class StudentServiceImpl implements StudentService{
         @Override
         public StudentEntity updateData(int id,StudentEntity stu){
             if(repo.existsById(id)){
-                StudentEntity.setId(id);
+                stu.setId(id);
                 return repo.save(stu);
             }else{
                 return null;
