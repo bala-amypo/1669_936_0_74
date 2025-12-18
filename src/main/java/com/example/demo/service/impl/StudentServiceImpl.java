@@ -28,4 +28,10 @@ public class StudentServiceImpl implements StudentService{
         public StudentEntity findData(int id){
             return repo.findById(id).orElse(null);
         }
+        @Override
+        public StudentEntity updateData(int id,StudentEntity stu){
+            if(repo.existsById(id)){
+
+            }
+        }
 }
