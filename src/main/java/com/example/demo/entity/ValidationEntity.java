@@ -19,10 +19,46 @@ public class ValidationEntity{
     private String username;
     @Email(message="Email is valid")
     private String email;
-    
-    @Size(min=2,max=6)
+    @Size(min=2,max=10,message="must be 2 to 10 characters")
     @NotNull(message="Password is mandatory")
     private String password;
+    @Max(30)@Positive(message="Age must be a Positive number")
     private int age;
 
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getUsername(){
+        return username;
+    }
+    public void setId(String username){
+        this.username=id;
+    }
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
+    public Long getId(){
+        return id;
+    }
+    public void setId(Long id){
+        this.id=id;
+    }
 }
