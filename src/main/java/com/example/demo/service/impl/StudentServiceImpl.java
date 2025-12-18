@@ -19,5 +19,10 @@ public class StudentServiceImpl implements StudentService{
         public StudentEntity postData(StudentEntity student){
             return repo.save(student);
         }
+        @Override
+        public String DeleteData(int id){
+            repo.deletebyId(id);
+            return "Deleted Successfully!"
+        }
 
 }
