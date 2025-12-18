@@ -24,7 +24,7 @@ public class ValidationEntity{
     @Size(min=2,max=10,message="must be 2 to 10 characters")
     @NotNull(message="Password is mandatory")
     private String password;
-    @Max(30)@Positive(message="Age must be a Positive number")
+    @Max(30) @Positive(message="Age must be a Positive number")
     private int age;
 
     public Long getId(){
@@ -33,7 +33,7 @@ public class ValidationEntity{
     public void setId(Long id){
         this.id=id;
     }
-    public Long getUsername(){
+    public String getUsername(){
         return username;
     }
     public void setId(String username){
