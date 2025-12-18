@@ -9,6 +9,12 @@ import com.example.demo.repository.StudentRepository;
 @Service
 public class StudentServiceImpl implements StudentService{
         @Autowired StudentRepository repo;
+
+        @Override
+        public List<StudentEntity> getData(){
+            
+        }
+
         @Override
         public StudentEntity postData(StudentEntity student){
             return repo.save(student);
