@@ -9,4 +9,5 @@ public interface StudentService{
     List<StudentEntity> getData();
     String DeleteData(int id);
     StudentEntity findData(int id);
+    S
 }
