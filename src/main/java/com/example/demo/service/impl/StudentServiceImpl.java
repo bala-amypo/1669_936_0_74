@@ -12,7 +12,7 @@ public class StudentServiceImpl implements StudentService{
 
         @Override
         public List<StudentEntity> getData(){
-            return repo.findAll()
+            return repo.findAll();
         }
 
         @Override
