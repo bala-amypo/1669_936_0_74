@@ -11,7 +11,7 @@ import com.example.demo.service.ValidationService;
 import com.example.demo.entity.ValidationEntity;
 import jakarta.validation.constraints.Positive;
 @RestContoller
-public class StudentController{
+public class ValidationController{
     @Autowired ValidationService serve;
     
     @PostMapping("/postValid")                                                                                                  
