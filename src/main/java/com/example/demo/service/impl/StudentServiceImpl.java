@@ -22,7 +22,7 @@ public class StudentServiceImpl implements StudentService{
         @Override
         public String DeleteData(int id){
             repo.deleteById(id);
-            return "Deleted Successfully!"
+            return "Deleted Successfully!";
         }
 
 }
