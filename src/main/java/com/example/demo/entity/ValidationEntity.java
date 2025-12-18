@@ -17,9 +17,10 @@ public class ValidationEntity{
     @NotNull
     @Size(min=2,max=10,message="must be 2 to 10 characters")
     private String username;
-    @Email
+    @Email(message="Email is valid")
     private String email;
-    @Size()
+    
+    @Max(6,message="length of password less than 6 ")
     private String password;
     private int age;
 
