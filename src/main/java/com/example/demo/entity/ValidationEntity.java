@@ -35,30 +35,25 @@ public class ValidationEntity{
         return username;
     }
     public void setId(String username){
-        this.username=id;
+        this.username=username;
     }
-    public Long getId(){
-        return id;
+    public String getEmail(){
+        return email;
     }
-    public void setId(Long id){
-        this.id=id;
+    public void setEmail(String email){
+        this.email=email;
     }
-    public Long getId(){
-        return id;
+    public String getPassword(){
+        return password;
     }
-    public void setId(Long id){
-        this.id=id;
+    public void setPassword(String password){
+        this.password=password;
     }
-    public Long getId(){
-        return id;
+    public int getAge(){
+        return age;
     }
-    public void setId(Long id){
-        this.id=id;
+    public void setId(int age){
+        this.age=age;
     }
-    public Long getId(){
-        return id;
-    }
-    public void setId(Long id){
-        this.id=id;
-    }
+    
 }
