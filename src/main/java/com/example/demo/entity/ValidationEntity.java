@@ -61,6 +61,10 @@ public class ValidationEntity{
     @Size(min=2,max=10,message="must be 2 to 10 characters")
     @NotNull(message="Password is mandatory") String password,
     @Max(30) @Positive(message="Age must be a Positive number") int age){
-
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.age=age;
     }
 }
