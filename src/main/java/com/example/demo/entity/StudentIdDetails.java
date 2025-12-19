@@ -14,7 +14,7 @@ import lombok.Getter;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentDetails{
+public class StudentIdDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     Long id;
