@@ -22,5 +22,6 @@ public class StudentIdDetails{
     private Integer id;
     private int id_no;
     @OneToOne
+    @JoinColumn(name=student)
     private StudentDetails student;
 }
