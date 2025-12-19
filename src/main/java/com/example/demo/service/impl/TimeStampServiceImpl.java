@@ -4,14 +4,16 @@ import com.example.demo.entity.TimeStampEntity;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.demo.repository.Repository;
+import com.example.demo.repository.TimeStampRepository;
 import java.util.List;
 @Service
 public interface TimeStampServiceImpl implements TimeStampService{
 
-     @Autowired StudentRepository repo;
+     @Autowired TimeStampRepository repo;
         
     @Override
-    TimeStampEntity postStamp(TimeStampEntity time);
+    TimeStampEntity postStamp(TimeStampEntity time){
+        return repo.save(time);
+    }
    
 }
