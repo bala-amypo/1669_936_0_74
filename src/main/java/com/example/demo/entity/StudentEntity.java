@@ -8,6 +8,10 @@ import jakarta.persistence.GenerationType;
 
 
 @Entity
+@Data
+@Getter
+@Setter
+@AllArgument
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
