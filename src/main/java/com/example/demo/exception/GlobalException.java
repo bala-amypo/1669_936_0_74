@@ -4,5 +4,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 publc class GlobalException{
     @ExceptionHandler(ValidationException.class)
-    public ResponseBody<String> handle
+    public ResponseBody<String> handleValidationException(ValidationException ex){
+        return new ResponseBody<String>(ex.get);
+
+    }
 }
