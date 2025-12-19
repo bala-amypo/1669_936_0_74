@@ -9,14 +9,18 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
-import lombok.*;
+import lombok.AllArgumentConstructor;
+import lombok.NoArgumentConstructor;
+import lombok.Data;
+import lombok.Setter;
+import lombok.Getter;
 
 @Entity
 @Data
 @Getter
 @Setter
 @AllArgumentConstructor
-@NoArgumentsConstructor
+@NoArgumentConstructor
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
