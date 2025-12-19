@@ -16,7 +16,7 @@ public class ValidationServiceImpl implements ValidationService{
         return repo.save(val);
     }
     @Override
-        public ValidationEntity findData(int id){
+        public ValidationEntity findData(Long id){
             return repo.findById(id).orElseThrow(()->new ValidationException("Invalid id "+id));
         }
 }
