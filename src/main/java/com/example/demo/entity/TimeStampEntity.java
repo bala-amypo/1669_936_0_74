@@ -7,15 +7,12 @@ import jakarta.persistence.GenerationType;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
-import lombok.Setter;
-import lombok.Getter;
-import java.util.LocalDateTime;
+
+import java.time.LocalDateTime;
 @Entity
 @Data
-@Getter
-@Setter
-@AllAgrsConstructor
-@NoAgrsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class TimeSampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
