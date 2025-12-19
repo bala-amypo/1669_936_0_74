@@ -31,8 +31,8 @@ public class StudentController{
     public StudentEntity findData(@PathVariable int id){
         return serve.findData(id);
     }
-    @PutMapping("/put/{id}")
-    public StudentEntity updateVal(@PathVariable int id,@RequestBody StudentEntity stu){
-        return serve.updateData(id,stu);
-    }
+    // @PutMapping("/put/{id}")
+    // public StudentEntity updateVal(@PathVariable int id,@RequestBody StudentEntity stu){
+    //     return serve.updateData(id,stu);
+    // }
 }
