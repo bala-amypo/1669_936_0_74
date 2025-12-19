@@ -5,6 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
@@ -19,5 +21,6 @@ public class StudentIdDetails{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int id_no;
-
+    @OneToOne
+    private StudentDetails student;
 }

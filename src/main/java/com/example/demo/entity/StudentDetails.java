@@ -18,8 +18,8 @@ public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
-    String name;
-    String email;
-    String address;
+    private String name;
+    private String email;
+    private String address;
 
 }
