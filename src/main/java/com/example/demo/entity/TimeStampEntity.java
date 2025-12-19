@@ -5,6 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
