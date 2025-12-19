@@ -1,9 +1,15 @@
 package com.example.demo.entity;
 
-import jakarta.validation.constraints.*;
-import jakata.persistence.*;
-import lombok.*;
-import java.util.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+import lombok.Setter;
+import lombok.Getter;
+import java.util.LocalDateTime;
 @Entity
 @Data
 @Getter
