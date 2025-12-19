@@ -16,6 +16,6 @@ public class ValidationServiceImpl implements ValidationService{
     }
     @Override
         public StudentEntity findData(int id){
-            return repo.findById(id);
+            return repo.findById(id).orElseThrow(other:);
         }
 }
