@@ -17,7 +17,7 @@ import lombok.Getter;
 public class StudentDetails{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    Long id;
+    private Integer id;
     String name;
     String email;
     String address;
