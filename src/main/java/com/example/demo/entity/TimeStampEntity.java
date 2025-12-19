@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class TimeSampEntity{
+public class TimeStampEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
@@ -21,4 +21,5 @@ public class TimeSampEntity{
     private String email;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    // @PrePersist
 }
