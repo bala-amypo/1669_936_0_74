@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.service.TimeStampService;
-import com.example.demo.entity.TimeSEntity;
+import com.example.demo.entity.TimeStampEntity;
 import jakarta.validation.Valid;
 @RestController
 public class ValidationController{
-    @Autowired ValidationService serve;
+    @Autowired TimeStampService serve;
     
-    @PostMapping("/postValid")                                                                                                  
-    public ValidationEntity ValidPost(@Valid @RequestBody ValidationEntity val){
-        return serve.postValid(val);
+    @PostMapping("/postTS")                                                                                                  
+    public TimeStampEntity postSt(@RequestBody TimeStampEntity time){
+        return serve.postStamp(time);
+    }
+}
