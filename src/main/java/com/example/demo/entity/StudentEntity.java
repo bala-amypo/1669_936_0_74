@@ -6,13 +6,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
-
+import lombok.*;
 @Entity
 @Data
 @Getter
 @Setter
-@AllArgumentConstructor
-@NoArgumentsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
