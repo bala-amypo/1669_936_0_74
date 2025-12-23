@@ -15,17 +15,27 @@ import com.example.demo.service.PersonService;
 @RestController
 public class PersonController {
     
-    @Autowired PersonService service1;
+    // @Autowired PersonService service1;
 
-@PostMapping("/post_person")
-public Person postperson(@RequestBody Person person){
+// @PostMapping("/post_person")
+// public Person postperson(@RequestBody Person person){
 
-    return service1.postdata2(person);
-}
+//     return service1.postdata2(person);
+// }
 
-@GetMapping("/get_person/{id}")
-public Person getperson(@PathVariable Long id){
+// @GetMapping("/get_person/{id}")
+// public Person getperson(@PathVariable Long id){
 
-    return service1.getdata2(id);
-}
+//     return service1.getdata2(id);
+// }
+
+
+    @Autowired
+    private PersonService service;
+
+    @PostMapping
+    public Person create(@RequestBody Person person) {
+        return service.savePerson(person);
+    }
+
 }
