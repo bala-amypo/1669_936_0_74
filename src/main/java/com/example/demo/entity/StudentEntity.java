@@ -25,4 +25,5 @@ public class StudentEntity{
     private String password;
     private Date created;
     
+    
 }
