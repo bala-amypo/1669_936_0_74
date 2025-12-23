@@ -26,6 +26,6 @@ public class Course {
     private String course_name;
 
     @ManyToMany(mappedBy = "course")
-    private List<Person> persons;
+    private List<Person> person;
 }
 
