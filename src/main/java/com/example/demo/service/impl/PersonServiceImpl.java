@@ -8,22 +8,24 @@ import com.example.demo.repository.PersonRepository;
 import com.example.demo.service.PersonService;
 
 @Service
-public class PersonServiceImpl implements PersonService {
+public class PersonService {
 
-    @Autowired PersonRepository repo2;
-    @Override
-    public Person postdata2(Person person){
+    @Autowired
+    private PersonRepository personRepo;
 
-        return repo2.save(person);
+    @Autowired
+    private CourseRepository courseRepo;
 
+    public Person savePerson(Person person) {
+
+        List<Course> courses = person.getCourse()
+            .stream()
+            .map(c -> courseRepo.findById(c.getCourse_id())
+                .orElseThrow(() -> new RuntimeException("Course not found")))
+            .toList();
+
+        person.setCourse(courses);
+
+        return personRepo.save(person);
     }
-
-    @Override
-       public Person getdata2(Long person_id){
-
-            return repo2.findById(person_id).orElse(null);
-
-         }
-
-
 }
