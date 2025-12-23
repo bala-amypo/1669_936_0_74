@@ -1,18 +1,18 @@
-package com.example.demo.service.impl;
+// package com.example.demo.service.impl;
 
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import com.example.demo.service.StudentTdDetailsService;
-import com.example.demo.entity.StudentIdDetails;
-import com.example.demo.repository.StudentDetailsRepository;
-@Service
-public class StudentDetailsServiceImpl implements StudentDetailsService{
-        @Autowired StudentDetailsRepository repo;
+// import java.util.List;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.stereotype.Service;
+// import com.example.demo.service.StudentTdDetailsService;
+// import com.example.demo.entity.StudentIdDetails;
+// import com.example.demo.repository.StudentDetailsRepository;
+// @Service
+// public class StudentDetailsServiceImpl implements StudentDetailsService{
+//         @Autowired StudentDetailsRepository repo;
         
-        @Override
-        public StudentDetails postData(StudentDetails student){
-            return repo.save(student);
-        }
+//         @Override
+//         public StudentDetails postData(StudentDetails student){
+//             return repo.save(student);
+//         }
         
-}
+// }
