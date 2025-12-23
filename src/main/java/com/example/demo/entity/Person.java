@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Department {
+public class Person{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long person_id;
@@ -41,5 +41,4 @@ public class Department {
     )             
     private List<Course> course;
     
-
 }
