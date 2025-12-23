@@ -25,9 +25,6 @@ public class Person{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long person_id;
 
-     @NotNull
-     @Email
-     @Column(unique=true)
     private String email;
     @NotNull
     private String person_name;
