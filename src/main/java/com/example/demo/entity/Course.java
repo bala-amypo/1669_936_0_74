@@ -1,4 +1,4 @@
-package com.example.demo1.entity;
+package com.example.demo.entity;
 
 import java.util.List;
 
@@ -34,7 +34,6 @@ public class Course {
     public Course(Long course_id){
         this.course_id=course_id;
     }
-
 
     
 }

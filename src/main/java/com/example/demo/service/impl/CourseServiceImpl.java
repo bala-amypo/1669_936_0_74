@@ -1,12 +1,12 @@
-package com.example.Spring.Service.impl;
+package com.example.demo.service.impl;
 
 // import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.Spring.Entity.Course;
-import com.example.Spring.Repository.CourseRepository;
-import com.example.Spring.Service.CourseService;
+import com.example.demo.entity.Course;
+import com.example.demo.repository.CourseRepository;
+import com.example.demo.service.CourseService;
 
 @Service
 public class CourseServiceImpl implements CourseService{
