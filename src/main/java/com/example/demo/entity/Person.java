@@ -29,7 +29,7 @@ public class Person{
      @Email
      @Column(unique=true)
     private String email;
-        @NotNull
+    @NotNull
     private String person_name;
 
     @ManyToMany
